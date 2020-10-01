@@ -21,8 +21,7 @@ import numpy as np
 import os
 from multiprocessing import Pool
 from functools import partial
-from scipy.misc import imresize
-from scipy.ndimage import imread
+import cv2  # for imread, resize
 
 from science_rcn.inference import test_image
 from science_rcn.learning import train_image
@@ -144,7 +143,7 @@ def get_mnist_data_iters(data_dir, train_size, test_size,
             for fname in samples:
                 filepath = os.path.join(cat_path, fname)
                 # Resize and pad the images to (200, 200)
-                image_arr = imresize(imread(filepath), (112, 112))
+                image_arr = cv2.resize(cv2.imread(filepath, cv2.IMREAD_GRAYSCALE), (112, 112))
                 img = np.pad(image_arr,
                              pad_width=tuple([(p, p) for p in (44, 44)]),
                              mode='constant', constant_values=0)
