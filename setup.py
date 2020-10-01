@@ -7,19 +7,19 @@ import zipfile
 REPO_DIR = os.path.dirname(os.path.realpath(__file__))
 
 
-def _findRequirements():
-    """Read the requirements.txt file and parse into requirements for setup's
-    install_requirements option.
-    """
-    requirements_path = os.path.join(REPO_DIR, 'requirements.txt')
-    try:
-        return [line.strip()
-                for line in open(requirements_path).readlines()
-                if not line.startswith('#')]
-    except IOError:
-        return []
+# def _findRequirements():
+#     """Read the requirements.txt file and parse into requirements for setup's
+#     install_requirements option.
+#     """
+#     requirements_path = os.path.join(REPO_DIR, 'requirements.txt')
+#     try:
+#         return [line.strip()
+#                 for line in open(requirements_path).readlines()
+#                 if not line.startswith('#')]
+#     except IOError:
+#         return []
 
-requirements = _findRequirements()
+# requirements = _findRequirements()
 
 # Check for MNIST data dir
 if not os.path.isdir('./data/MNIST'):
