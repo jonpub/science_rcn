@@ -1,3 +1,17 @@
+# HOWTO
+
+This version of vicariousinc/science_rc is a fork from frkhit/science_rcn
+Tested on RPi4 running Raspbian GNU/Linux 10 (buster)
+
+Suggest setup using:
+```
+source setup.sh
+```
+
+Then running the examples.  Reminder: exit the virtualenv with `deactivate`
+
+---
+
 [![](data/vicarious_logo.png)](https://www.vicarious.com)
 
 # Reference implementation of Recursive Cortical Network (RCN)
