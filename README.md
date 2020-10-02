@@ -1,6 +1,6 @@
 # HOWTO
 
-This version of vicariousinc/science_rc is a fork from frkhit/science_rcn
+This version of vicariousinc/science_rcn is a fork from frkhit/science_rcn
 Tested on RPi4 running Raspbian GNU/Linux 10 (buster)
 
 Suggest setup using:
