@@ -1,14 +1,15 @@
 # HOWTO
 
 This version of vicariousinc/science_rcn is a fork from frkhit/science_rcn
+
 Tested on RPi4 running Raspbian GNU/Linux 10 (buster)
 
-Suggest setup using:
+To install:
 ```
 source setup.sh
 ```
 
-Then running the examples.  Reminder: exit the virtualenv with `deactivate`
+Then run the examples.
 
 ---
 
